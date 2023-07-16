@@ -1,0 +1,30 @@
+--- Create a bookstore database ---
+
+CREATE TABLE books (id integer primary key, name text, year integer, condition text, price integer); 
+
+INSERT INTO books VALUES (1, "Math", 2020, "New", 12.30);
+INSERT INTO books VALUES (2, "Science", 1997, "Excellent", 16.50); 
+INSERT INTO books VALUES (3, "Langauage", 2014, "Good", 14.50); 
+INSERT INTO books VALUES (4, "English", 2017, "Good", 18.50);
+INSERT INTO books VALUES (5, "Music", 2011, "New", 19.50);
+INSERT INTO books VALUES (6, "Maps", 2001, "Excellent", 194.50);
+INSERT INTO books VALUES (7, "Reading", 1990, "Good", 154.50);
+INSERT INTO books VALUES (8, "Computers", 1993, "New", 134.50);
+INSERT INTO books VALUES (9, "Cooking", 2005, "Excellent", 314.50);
+INSERT INTO books VALUES (10, "Earth", 1998, "Excellent", 174.50);
+INSERT INTO books VALUES (11, "Essays", 2016, "Good", 124.50);
+INSERT INTO books VALUES (12, "History", 2013, "Good", 14.50);
+INSERT INTO books VALUES (13, "Art", 2009, "New", 114.50);
+INSERT INTO books VALUES (14, "Love", 1992, "New", 134.50);
+INSERT INTO books VALUES (15, "Friendship", 1991, "Good", 154.50);
+
+
+-- Display the database order by price ---
+
+SELECT * FROM books
+ORDER BY price asc;
+
+
+-- What is the total price of all the books? ---
+
+SELECT SUM(price) FROM books;
